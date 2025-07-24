@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- owl carousel css-->
+    <link rel="stylesheet" href="files/owl-carousel/assets/owl.carousel.css" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>STAR WARS</title>
+</head>
+
+<body>
+
+    <!-- Splash screen con video -->
+    <div id="splash" class="splash-screen">
+        <video id="splashVideo" playsinline>
+            <source src="files/IntroStarWars.mp4" type="video/mp4" >
+            Il tuo browser non supporta il video HTML5.
+        </video>
+        <div class="overlay" id="overlay">
+            <h1>Sei Tra i Prescelti!</h1>
+            <p id="userName"></p>
+            <button id="enterBtn">PROCEDI</button>
+            <br>
+            <h5>Consigliata visualizzazione da PC</h5>
+            <h5>o telefono in orizzontale</h5>
+            
+            <h3>ALZA IL VOLUME!!</h3>   
+        </div>
+    </div>
+
+    <div id="mainContent">
+        <div id="fh5co-hero-carousel" class="carousel slide header" data-ride="carousel">
+            <nav class="navbar fixed-top navbar-expand-xl">
+                <div class="container">
+                    <a class="navbar-brand mobile-logo" href=""><img src="images/logo.png" alt="Vista Pro" width="300px"/></a>
+                    <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse">
+                        <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
+
+                    <div id="my-nav" class="collapse navbar-collapse">
+
+                        <div>
+                            <p class="text-left follow">Follow Us:</p>
+                            <ul class="navbar-nav float-left social-links">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://wallpapers.com/images/hd/pepe-the-frog-purple-galaxy-9difqmrwp48g02bl.jpg"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"><i class="fab fa-pinterest-p"></i></a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="https://wallpapers.com/images/hd/pepe-the-frog-purple-galaxy-9difqmrwp48g02bl.jpg"><i class="fab fa-google-plus-g"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <ul class="navbar-nav mx-auto logo-desktop">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><img src="images/logo.png" alt="Vista Pro" width="300px"/></a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav float-right menu-links">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#regole">Regole</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Anteprima">Anteprima</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Presenza</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#news">Film</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <video id="myVideo" width="100%" alt="home-bg" autoplay>
+                        <source src="files/Background.mp4" type="video/mp4">  
+                        Il tuo browser non supporta il tag video.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 home-bg" src="images/11793.jpg" width="100%">
+
+                    <div class="carousel-caption d-md-block">
+                        <h6>Preparati</h6>
+                        <h5>ALLA VELOCITÀ DELLA LUCE</h5>
+                        <p>e ricorda....</p>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 home-bg" src="images/11794.png" width="100%">
+
+                    <div class="carousel-caption d-md-block" text-color = "black">
+                        <h6>SPAZIO</h6>
+                        <h5>ULTIMA FRONTIERA</h5>
+                        <p>Questi sono i viaggi della nave stellare Enterprise.</p>
+                        <p>La sua missione è quella di esplorare strani nuovi mondi</p>
+                        <p>alla ricerca di nuove forme di vita e di nuove civiltà per arrivare coraggiosamente</p>
+                        <p>là dove nessuno è mai giunto prima!</p>
+                    </div>
+                </div>
+                <div class="scroll-button">
+                    <p>Scroll down to see more...</p>
+                    <a href="#regole" class="page-scroll">
+                        <img src="images/arrows-down.png" alt="arrow down" />
+                    </a>
+
+                </div>
+            </div>
+            <ul class="carousel-indicators">
+                <li class="active" data-target="#fh5co-hero-carousel" data-slide-to="0" aria-current="location"></li>
+                <li data-target="#fh5co-hero-carousel" data-slide-to="1"></li>
+                <li data-target="#fh5co-hero-carousel" data-slide-to="2"></li>
+            </ul>
+        </div>
+
+
+        <div class="container-fluid fh5co-regole" id="regole">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+
+                        <svg class="back-bg" viewBox="0 0 535 618">
+                            <defs>
+                                <linearGradient id="PSgrad_0" x1="0%" x2="100%" y1="0%" y2="0%">
+                                    <stop offset="0%" stop-color="rgb(228, 214, 18)" stop-opacity="1" />
+                                    <stop offset="100%" stop-color="rgb(228, 214, 18)" stop-opacity="1" />
+                                </linearGradient>
+
+                            </defs>
+                            <path fill-rule="evenodd" fill="rgb(228, 214, 18)"
+                                d="M6.000,-0.000 L499.000,-0.000 C502.314,-0.000 505.000,2.686 505.000,6.000 L505.000,612.000 C505.000,615.314 502.314,618.000 499.000,618.000 L6.000,618.000 C2.686,618.000 -0.000,615.314 -0.000,612.000 L-0.000,6.000 C-0.000,2.686 2.686,-0.000 6.000,-0.000 Z" />
+                            <path fill="url(#PSgrad_0)"
+                                d="M6.000,-0.000 L499.000,-0.000 C502.314,-0.000 505.000,2.686 505.000,6.000 L505.000,612.000 C505.000,615.314 502.314,618.000 499.000,618.000 L6.000,618.000 C2.686,618.000 -0.000,615.314 -0.000,612.000 L-0.000,6.000 C-0.000,2.686 2.686,-0.000 6.000,-0.000 Z" />
+                        </svg>
+
+                        <div class="owl-carousel owl-carousel1 owl-theme">
+                            <div>
+                                <img src="images/May_The_4th_Be_With_You_Star_Wars_party-2.png" alt=""  width="20%" height="10%" />
+                            </div>
+                            <div>
+                                <img src="images/star-wars-costume-party.jpg.webp" alt="" width="20%" height="10%" />
+                            </div>
+                            <div>
+                                <img src="images/star-wars-party-sleepover-ideas-2.jpg" alt="" width="20%" height="10%" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="regole-content">
+                            <h2 id="regole-maratona">Regole Maratona</h2>
+                            <p>    🚫 Niente pause!
+
+        I film non vengono messi in pausa, mai. Neanche per andare in bagno. Ti alzi? Ti perdi qualcosa. Così funziona la vita.
+
+    🍕 Solo cibo spazzatura.
+
+        Durante la maratona si mangiano solo cose che fanno male ma rendono felici: patatine, pizza, popcorn, caramelle, cioccolato, bibite gassate. Vietata ogni forma di insalata o pietanza sana.
+
+    🛑 Telefoni silenziati.
+
+        Vietato controllare il telefono, scrollare su Instagram o rispondere ai messaggi durante la visione.
+
+    👀 Nessuno spoilera.
+
+        Se qualcuno non ha ancora visto uno dei film della maratona, niente spoiler.
+
+    🎬 Ordine sacro dei film.
+
+        L’ordine dei film viene deciso in anticipo e non si cambia. Niente rivoluzioni all’ultimo minuto.
+
+    💬 Commenti solo a voce bassa.
+
+        Puoi fare battute o osservazioni, ma senza coprire l’audio del film.
+
+    🧼 Regola dell'intervallo igienico.
+
+    Una pausa bagno/aria ogni 3 film è concessa. Anche perchè vedremo solo 3 film.</p>
+                            <a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc" class="read-more">Read More</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid fh5co-Anteprima" id="Anteprima">
+            <div class="container">
+                <h2>Anteprima</h2>
+                <p>Di seguito una carrellata di immagini per prepararsi a cosa ti aspetta. </p>
+                <h3>FILTER BY:</h3>
+                <div class="Anteprima-tab AnteprimaFilter">
+                    <ul>
+                        <li><a id="all-start" href="#" data-filter="*" class="active">CLICCAMI</a>
+                        </li>
+                        <li><a href="#" data-filter=".Star-Wars">Star Wars</a>
+                        </li>
+                        <li><a href="#" data-filter=".Cinema">Cinema</a>
+                        </li>
+                        <li><a href="#" data-filter=".Episode-I">Episode I</a>
+                        </li>
+                        <li><a href="#" data-filter=".Episode-II">Episode II</a>
+                        </li>
+                        <li><a href="#" data-filter=".Episode-III">Episode III</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="row">
+
+                    <div class="AnteprimaContainer">
+
+                        <div class="gallary Star-Wars Episode-I">
+                            <img src="images/stw1.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/stw1.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon"><img src="images/share.png" alt="share icon" /></span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Episode I</span></a>
+
+                                    <a href="images/stw1.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallary Episode-III Star-Wars">
+                            <img src="images/img1.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/img1.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon">
+                                            <img src="images/share.png" alt="share icon" />
+                                        </span> 
+                                        <span class="txt">Share Now</span></a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Darth Vader</span></a>
+
+                                    <a href="images/img1.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary center-img Cinema">
+                            <img src="images/img2.jpg" class="half-height" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/img2.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon">
+                                            <img src="images/share.png" alt="share icon" />
+                                        </span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Come vedremo i film</span></a>
+
+                                    <a href="images/img2.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallary building Cinema">
+
+                            <img src="images/img6.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/img6.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon">
+                                            <img src="images/share.png" alt="share icon" />
+                                        </span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Absolute Cinema</span></a>
+
+                                    <a href="images/img6.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary center-img Episode-II Episode-III Star-Wars">
+                            <img src="images/img3.jpg" class="half-height" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/img3.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon">
+                                            <img src="images/share.png" alt="share icon" />
+                                        </span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Clone</span></a>
+
+                                    <a href="images/img3.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary Cinema">
+                            <img src="images/img5.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/img5.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon"><img src="images/share.png" alt="share icon" /></span> 
+                                        <span class="txt">Share Now</span></a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Ready to go</span></a>
+
+                                    <a href="images/img5.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallary center-img Star-Wars Episode-III">
+                            <img src="images/stw3.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/stw3.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon"><img src="images/share.png" alt="share icon" /></span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Episode III</span></a>
+
+                                    <a href="images/stw3.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallary center-img Episode-I Star-Wars">
+                            <img src="images/img7.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/img7.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon"><img src="images/share.png" alt="share icon" /></span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Jedi</span></a>
+
+                                    <a href="images/img7.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="gallary Star-Wars">
+                            <img src="images/img4.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/img4.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon"><img src="images/share.png" alt="share icon" /></span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">The Mandalorian</span></a>
+
+                                    <a href="images/img4.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallary Star-Wars Episode-II">
+                            <img src="images/stw2.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/stw2.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon"><img src="images/share.png" alt="share icon" /></span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Episode II</span></a>
+
+                                    <a href="images/stw2.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallary center-img Star-Wars Episode-I">
+                            <img src="images/img8.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/img8.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon"><img src="images/share.png" alt="share icon" /></span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">The Jedi</span></a>
+
+                                    <a href="images/img8.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallary Star-Wars Episode-II Episode-III">
+                            <img src="images/img9.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/img9.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon"><img src="images/share.png" alt="share icon" /></span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Dark Side</span></a>
+
+                                    <a href="images/img9.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallary Star-Wars Episode-III">
+                            <img src="images/img10.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="top-buttons clearfix">
+                                    <a href="images/img10.jpg" target="_blank" rel="noopener noreferrer">
+                                        <span class="img-icon"><img src="images/share.png" alt="share icon" /></span> 
+                                        <span class="txt">Share Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="top-buttons bottom-buttons clearfix">
+                                    <a href="#"><span class="txt">Rebellion</span></a>
+
+                                    <a href="images/img10.jpg" target="_blank" rel="noopener noreferrer"><span class="img-icon"><img src="images/eye.png" alt="share icon" /></span>
+                                        <span class="txt">Full View</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+                <div class="row AnteprimaFilter">
+                    <ul class="indicators">
+                        <li><a href="#" data-filter=".Star-Wars" class="active"></a>
+                        </li>
+                        <li><a href="#" data-filter=".Cinema"></a>
+                        </li>
+                        <li><a href="#" data-filter=".Episode-I"></a>
+                        </li>
+                        <li><a href="#" data-filter=".Episode-II"></a>
+                        </li>
+                        <li><a href="#" data-filter=".Episode-III"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid fh5co-news" id="news">
+            <div class="container">
+                <h2 id="film-list">Film</h2>
+                <div class="row">
+                    <div class="owl-carousel owl-carousel2 owl-theme">
+                        <div>
+                            <div class="card text-center"> <img class="card-img-top" src="images/stw2.jpg" alt="">
+                                <div class="card-body text-left pr-0 pl-0">
+                                    <h5>Episodio 2 - L’Attacco dei Cloni</h5>
+                                    <p class="card-text">La galassia è in fermento: molti sistemi stanno minacciando di separarsi dalla Repubblica, alimentando tensioni e instabilità politica. Mentre il Senato valuta la creazione di un esercito per affrontare questa possibile guerra, un attentato costringe i Jedi a intervenire per proteggere una figura politica chiave. Anakin Skywalker, ora apprendista Jedi, si ritrova coinvolto in missioni che lo mettono alla prova sia come guerriero che come uomo. Intanto, misteriosi eventi suggeriscono l'esistenza di un complotto ben più profondo, che potrebbe cambiare per sempre gli equilibri della Repubblica.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="card text-center"> <img class="card-img-top" src="images/stw3.jpg" alt="">
+                                <div class="card-body text-left pr-0 pl-0">
+                                    <h5>Episodio 3 - La Vendetta dei Sith</h5>
+                                    <p class="card-text">La guerra infuria in tutta la galassia. I Jedi lottano per mantenere la pace mentre la Repubblica combatte contro l’esercito separatista. Anakin Skywalker è ora un potente Cavaliere Jedi, sempre più rispettato ma anche sempre più turbato interiormente. Mentre i conflitti militari si intensificano, anche le tensioni politiche crescono: il Cancelliere Supremo ottiene sempre più potere, e i Jedi iniziano a sospettare che qualcosa di oscuro stia per emergere. In questo clima carico di tensione, scelte personali e grandi eventi si intrecciano, portando la galassia verso un cambiamento drammatico e irreversibile.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="card text-center"> <img class="card-img-top" src="images/stw1.jpg" alt="">
+                                <div class="card-body text-left pr-0 pl-0">
+                                    <h5>Episodio 1 - La minaccia fantasma </h5>
+                                    <p class="card-text">In una galassia governata dalla Repubblica, scoppia una crisi commerciale che coinvolge un pacifico pianeta minacciato da un blocco illegale. Due Jedi vengono inviati per risolvere la situazione, ma scoprono che dietro le tensioni si nasconde qualcosa di più oscuro. Durante il loro viaggio, si imbattono in un giovane ragazzo con un potenziale eccezionale, che potrebbe cambiare il destino dell'intera galassia. Intanto, le ombre iniziano a muoversi, suggerendo il ritorno di un antico pericolo. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid fh5co-regole" id="regole">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+
+                        <svg class="back-bg" viewBox="0 0 535 618">
+                            <defs>
+                                <linearGradient id="PSgrad_0" x1="0%" x2="100%" y1="0%" y2="0%">
+                                    <stop offset="0%" stop-color="rgb(228, 214, 18)" stop-opacity="1" />
+                                    <stop offset="100%" stop-color="rgb(228, 214, 18)" stop-opacity="1" />
+                                </linearGradient>
+
+                            </defs>
+                            <path fill-rule="evenodd" fill="rgb(228, 214, 18)"
+                                d="M6.000,-0.000 L499.000,-0.000 C502.314,-0.000 505.000,2.686 505.000,6.000 L505.000,612.000 C505.000,615.314 502.314,618.000 499.000,618.000 L6.000,618.000 C2.686,618.000 -0.000,615.314 -0.000,612.000 L-0.000,6.000 C-0.000,2.686 2.686,-0.000 6.000,-0.000 Z" />
+                            <path fill="url(#PSgrad_0)"
+                                d="M6.000,-0.000 L499.000,-0.000 C502.314,-0.000 505.000,2.686 505.000,6.000 L505.000,612.000 C505.000,615.314 502.314,618.000 499.000,618.000 L6.000,618.000 C2.686,618.000 -0.000,615.314 -0.000,612.000 L-0.000,6.000 C-0.000,2.686 2.686,-0.000 6.000,-0.000 Z" />
+                        </svg>
+
+                        <div class="owl-carousel owl-carousel1 owl-theme">
+                            <div>
+                                <img src="images/roll1.jpg" alt=""  width="10%" height="5%" />
+                            </div>
+                            <div>
+                                <img src="images/roll2.jpg" alt="" width="10%" height="10%" />
+                            </div>
+                            <div>
+                                <img src="images/roll3.jpg" alt="" width="10%" height="10%" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="regole-content">
+                            <h2 id="regole-maratona">Orario e Luogo</h2>
+                            <p>Giorno designato: 14 Settembre</p>
+                            <p>Orari della Maratona</p>
+                            <p>Inizio alle 13:00. La durata complessiva dei 3 film sarà di circa 6 ore e 58 minuti. Probabilmente la maratona finirà verso le 20:00.</p>
+                            <p>(Sapendo che pochi arriveranno all'orario descritto sopra, la maratona finirà verso le 22:00)</p>
+                            <a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc" class="read-more">Read More</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="container-fluid fh5co-footer">
+            <div class="container" id="contact">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2>CONTATTI QUI</h2>
+                        <p class="light">
+                            Faimmi sapere che ne pensi!
+                        </p>
+                        <p>
+                            <span class="email"><img src="images/email.png"
+                                    alt="email icon" /></span><b>nontiriguardassolutamente@starwars.com</b>
+                        </p>
+                        <p>
+                            <span class="phone"><img src="images/phone.png" alt="phone icon" /></span><b>908-345-9834</b>
+                        </p>
+                        <h3>Social contacts:</h3>
+                        <ul class="navbar-nav float-left social-links footer-social">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://wallpapers.com/images/hd/pepe-the-frog-purple-galaxy-9difqmrwp48g02bl.jpg"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"><i class="fab fa-pinterest-p"></i></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://wallpapers.com/images/hd/pepe-the-frog-purple-galaxy-9difqmrwp48g02bl.jpg"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="form-box">
+                            <h4>SEGNA LA TUA PRESENZA</h4>
+                            <p>Ci sarai Jedi?</p>
+                            <hr />
+                            <form action="https://formspree.io/f/xqalejdv" method="POST">
+                                <table class="table table-light table-borderless">
+                                    <tr>
+                                        <td><input type="text" class="form-control" name="name" placeholder="Scrivere il tuo nome qui, devi..." required>
+                                        </td>
+
+                                        <td><input type="email" class="form-control" name="email" placeholder="E-mail" required>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2"><textarea class="form-control" name="message" placeholder="Farmi sapere, tu dovere..." required></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <button type="submit">
+                                                Invia
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="files/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/isotope-docs.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
