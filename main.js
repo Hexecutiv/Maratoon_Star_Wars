@@ -8,45 +8,45 @@ const video = document.getElementById("myVideo");
 mainContent.style.display = 'none';
 
 // NORMAL START--------------------------------------------------------------
-//enterBtn.addEventListener("click", () => {
- //   // Nascondi il bottone e il testo
-//   overlay.style.display = "none";
- //   // Avvia il video
-//    splashVideo.play();
-//});
+enterBtn.addEventListener("click", () => {
+    // Nascondi il bottone e il testo
+   overlay.style.display = "none";
+    // Avvia il video
+    splashVideo.play();
+});
 
 // Quando il video finisce
-//splashVideo.addEventListener("ended", () => {
-//    splash.style.transition = "opacity 1s";
-//    splash.style.opacity = 0;
-//
-//    // Rimuovi splash dopo dissolvenza
- //   setTimeout(() => {
- //       splash.style.display = "none";
-//        document.body.style.overflow = "auto"; // Riattiva lo scroll
-//        mainContent.style.display = "block";
-//   }, 1000);
-//    video.play(); // fai partire il video
-//    document.getElementById('all-start').click();
-//});
+splashVideo.addEventListener("ended", () => {
+    splash.style.transition = "opacity 1s";
+    splash.style.opacity = 0;
+
+    // Rimuovi splash dopo dissolvenza
+    setTimeout(() => {
+        splash.style.display = "none";
+        document.body.style.overflow = "auto"; // Riattiva lo scroll
+        mainContent.style.display = "block";
+   }, 1000);
+    video.play(); // fai partire il video
+    document.getElementById('all-start').click();
+});
 //--------------------------------------------------------------------------
 
 
 
 // FAST START------------------------------
-enterBtn.addEventListener("click", () => {
-    // Nascondi il bottone e il testo
-   overlay.style.display = "none";
-   splash.style.transition = "opacity 1s";
-   splash.style.opacity = 0;
-    setTimeout(() => {
-        splash.style.display = "none";
-        document.body.style.overflow = "auto"; // Riattiva lo scroll
-        mainContent.style.display = "block";
-    }, 1000);
-    video.play();
-    document.getElementById('all-start').click();
-});
+//enterBtn.addEventListener("click", () => {
+//    // Nascondi il bottone e il testo
+//   overlay.style.display = "none";
+//   splash.style.transition = "opacity 1s";
+//   splash.style.opacity = 0;
+//    setTimeout(() => {
+//        splash.style.display = "none";
+//        document.body.style.overflow = "auto"; // Riattiva lo scroll
+//        mainContent.style.display = "block";
+//    }, 1000);
+//    video.play();
+//    document.getElementById('all-start').click();
+//});
 //-----------------------------------------
 
 
